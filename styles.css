@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFFDF7;
+    font-family: 'Oswald';
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2%;
+}
+
+.nav-item {
+    margin: 3px 10px;
+    font-size: x-large;
+}
+
+.banner {
+    height: 322px;
+    background-color: #939F5C;
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 150px;
+}
+
+.name {
+    font-size: 5rem;
+    display: inline-block;
+}
+
+.name-sub {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.about {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.about #about-banner {
+    font-size: 3rem;
+}
+
+.about-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.about #about-pic {
+    grid-column: 1;
+}
+
+.about #about-text {
+    grid-column: 2;
+}
