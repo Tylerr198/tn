@@ -8,11 +8,11 @@
 	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-	<nav>
-		<a class="nav-item">About</a>
-		<a class="nav-item">Experience</a>
-		<a class="nav-item">Projects</a>
-		<a class="nav-item">Contact</a>
+	<nav id="navbar">
+		<a class="nav-item" href="#about-target">About</a>
+		<a class="nav-item" href="#exp-target">Experience</a>
+		<a class="nav-item" href="#proj-target">Projects</a>
+		<a class="nav-item" href="#exp-target">Contact</a>
 	</nav>
 	<div class="banner">
 		<div class="banner-content">
@@ -21,13 +21,25 @@
 			</div>
 		</div>
 	</div>
-	<div class="about">
+	<div class="about" id="about-target">
 		<div id="about-banner">About</div>
 		<div class="about-content">
 			<div class="about-pic">hello</div>
-			<div class="about-text">yoyo</div>
+			<div class="about-text">
+				I am software engineer. Recently graduated with a BA in Computer Science from Boston University. I am scrappy and love to get straight into the workings of things with a passion for building ideas that have impact.
+			</div>
 		</div>
 	</div>
-
+	<div class="exp" id="exp-target">
+		<div id="exp-banner">Experience</div>
+		<div class="exp-content">
+		</div>
+	</div>
+	<div class="proj" id="proj-target">
+		<div id="proj-banner">Projects</div>
+		<div class="proj-content">
+		</div>
+	</div>
+	<script src="main.js"></script>
 </body>
 </html>

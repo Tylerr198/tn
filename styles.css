@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;;
+}
+
 body {
     background-color: #FFFDF7;
     font-family: 'Oswald';
@@ -13,12 +17,27 @@ body {
 nav {
     display: flex;
     justify-content: flex-end;
-    margin-right: 2%;
+    padding-right: 2%;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    overflow: hidden;
+    background-color: #FFFDF7;
 }
 
 .nav-item {
     margin: 3px 10px;
     font-size: x-large;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .banner {
@@ -47,12 +66,16 @@ nav {
 
 .about #about-banner {
     font-size: 3rem;
+    margin-bottom: 1.5rem;
 }
 
 .about-content{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+    padding-right: 5em;
+    min-height: 800px;
+    font-size: 2rem;
 }
 
 .about #about-pic {
@@ -61,4 +84,26 @@ nav {
 
 .about #about-text {
     grid-column: 2;
+    font-size: x-large;
+}
+
+.exp {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background-color: #F2EFE4;
+    height: 500px;
+}
+.exp #exp-banner {
+    font-size: 3rem;
+}
+
+.proj {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    height: 500px;
+}
+.proj #proj-banner {
+    font-size: 3rem;
 }
